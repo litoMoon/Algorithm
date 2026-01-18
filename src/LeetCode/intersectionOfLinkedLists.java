@@ -43,4 +43,5 @@ class ListNode {
         val = x;
         next = null;
     }
+    ListNode(){}
 }
