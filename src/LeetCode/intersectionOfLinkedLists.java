@@ -44,4 +44,8 @@ class ListNode {
         next = null;
     }
     ListNode(){}
+    ListNode(int x,ListNode next) {
+        val = x;
+        this.next = next;
+    }
 }
