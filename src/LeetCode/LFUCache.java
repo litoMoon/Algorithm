@@ -93,8 +93,9 @@ import java.util.Map;
 }*/
 
 class LFUCache {
-    //定义内部类？？
+    //定义内部类--静态内部类
     public static class Node{
+        //在静态内部类中只能访问外部的静态成员
         int key,value,freq=1;
         Node prev,next;
         public Node(int key,int value){
