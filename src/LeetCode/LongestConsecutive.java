@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class LongestConsecutive {
 
-    public int longestConsecutive(int[] nums) {
+    public static int longestConsecutive(int[] nums) {
 
         Set<Integer> st = new HashSet<>();
         for (int num : nums) {
@@ -28,6 +28,10 @@ public class LongestConsecutive {
 
         return ans;
 
+    }
+
+    public static void main(String[] args) {
+        System.out.println(longestConsecutive(new int[]{100, 4, 200, 1, 3, 2}));
     }
 
 }
