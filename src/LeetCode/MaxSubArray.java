@@ -10,7 +10,5 @@ public class MaxSubArray {
             ret=Math.max(dp[i],ret);
         }
         return ret;
-
-
     }
 }
