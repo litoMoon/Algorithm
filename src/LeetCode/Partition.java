@@ -20,12 +20,10 @@ public class Partition {
             if(yesPalindrome(i,j,s)){
                 //true表示为回文串
                 path.add(s.substring(i,j+1));
-                isPalindrome(++i,s,path,res);
+                isPalindrome(j+1,s,path,res);
                 path.remove(path.size()-1);
             }
         }
-
-
     }
     public static boolean yesPalindrome(int left,int right,String s){
         while(left<right){
